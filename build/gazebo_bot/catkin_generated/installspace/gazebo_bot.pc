@@ -1,0 +1,8 @@
+prefix=/home/blebot/ar_tag/install
+
+Name: gazebo_bot
+Description: Description of gazebo_bot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+gazebo_bot
+-DCATKIN_DEVEL_PREFIX=/home/blebot/ar_tag/devel -DCMAKE_INSTALL_PREFIX=/home/blebot/ar_tag/install -G Unix Makefiles
