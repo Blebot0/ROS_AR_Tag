@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+<group ns="ar_robot">
+<param name="robot_description" command="$(find xacro)/xacro.py '/home/blebot/ar_tag/src/gazebo_bot/urdf/artag.xacro'"/>
+
+  <node name="spawn_urdf_ar" pkg="gazebo_ros" type="spawn_model" output="screen"
+   args="-param robot_description -urdf -model artag" />
+</group>
+</launch>

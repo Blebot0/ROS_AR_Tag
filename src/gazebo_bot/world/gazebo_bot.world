@@ -12,16 +12,5 @@
     <include>
       <uri>model://sun</uri>
     </include>
-	<model name="tag">
-      	<pose>0 0 0.3  1.707 0 0</pose>
-      	<static>true</static>
-      	<link name="body">
-        	<visual name="visual">
-          	<geometry>
-            	<mesh><uri>file://ar_tag.dae</uri></mesh>
-          	</geometry>
-        	</visual>
-      	</link>
-    </model>
   </world>
 </sdf>

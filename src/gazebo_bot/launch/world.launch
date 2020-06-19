@@ -7,22 +7,21 @@
     <arg name="world_name" value="/home/blebot/ar_tag/src/gazebo_bot/world/gazebo_bot.world"/>
   </include>
 
-  
+<include file="/home/blebot/ar_tag/src/gazebo_bot/launch/bot.launch"/>
+
+<include file="/home/blebot/ar_tag/src/gazebo_bot/launch/ar.launch"/>
+<!--
+ 
   <param name="robot_description" command="$(find xacro)/xacro.py '/home/blebot/ar_tag/src/gazebo_bot/urdf/bot.xacro'"/>
 
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen"
    args="-param robot_description -urdf -model bot" />
 
-<!--
-    <include file="/home/blebot/ar_tag/src/gazebo_bot/launch/spawn_sdf.launch">
-        <arg name="robot_name" value="model" />
-        <arg name="x" value="0.0" />
-        <arg name="y" value="0.0" />
-        <arg name="z" value="1.0" />
-        <arg name="roll" value="0"/>
-        <arg name="pitch" value="0"/>
-        <arg name="yaw" value="0.0" />
-        <arg name="sdf_robot_file" value="/home/blebot/ar_tag/src/gazebo_bot/world/model.sdf" />
-    </include>
+
+<param name="robot_description" command="$(find xacro)/xacro.py '/home/blebot/ar_tag/src/gazebo_bot/urdf/artag.xacro'"/>
+
+  <node name="spawn_urdf_1" pkg="gazebo_ros" type="spawn_model" output="screen"
+   args="-param robot_description -urdf -model artag" />
 -->
+
 </launch>
