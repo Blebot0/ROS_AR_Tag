@@ -2,14 +2,14 @@
 <robot name="artag" xmlns:xacro="http://www.ros.org/wiki/xacro">
 <link name="artag">
         <collision name="collision_tag">
-                <origin xyz="3 3 0.4" rpy="1.707 1.707 0" />
+                <origin xyz="0.3 0 0.4" rpy="1.707 1.707 0" />
                 <geometry>
                          <box size="0.5 0.5 0.5" />
                 </geometry>
         </collision>
-	
+
 	<visual name="tag_visual">
-                <origin xyz="3 3 0.4" rpy="1.707 1.707 0" />
+                <origin xyz="0.3 0 0.4" rpy="1.707 1.707 0" />
                 <geometry>
                         <mesh filename= "file:///home/blebot/ar_tag/src/gazebo_bot/world/ar_tag.dae"/>
                 </geometry>
@@ -18,7 +18,7 @@
 
         <inertial>
                 <mass value="1.0" />
-                <origin xyz="3 3 0.0001" rpy="1.707 1.707 0"/>
+                <origin xyz="0.3 0  0.0001" rpy="1.707 1.707 0"/>
                 <inertia ixx="0.0001" ixy="0.0" ixz="0.0"
                          iyy="0.0001" iyz="0.0"
                          izz="0.0001" />

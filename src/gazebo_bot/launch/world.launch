@@ -10,6 +10,8 @@
 <include file="/home/blebot/ar_tag/src/gazebo_bot/launch/bot.launch"/>
 
 <include file="/home/blebot/ar_tag/src/gazebo_bot/launch/ar.launch"/>
+
+<include file="/home/blebot/ar_tag/src/gazebo_bot/launch/ar_track.launch"/>
 <!--
  
   <param name="robot_description" command="$(find xacro)/xacro.py '/home/blebot/ar_tag/src/gazebo_bot/urdf/bot.xacro'"/>
