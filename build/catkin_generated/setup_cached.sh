@@ -7,10 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/blebot/ar_tag/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/blebot/ar_tag/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/blebot/ar_tag/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/blebot/ar_tag/build"
 export PYTHONPATH="/home/blebot/catkin_ws/devel/lib/python3/dist-packages:/home/blebot/models/research/slim:/opt/ros/melodic/lib/python2.7/dist-packages"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/blebot/ar_tag/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/blebot/ar_tag/src:$ROS_PACKAGE_PATH"
