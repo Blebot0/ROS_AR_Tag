@@ -1,7 +1,7 @@
 # ROS_AR_Tag
 AR TAG Detection using ROS and Gazebo
 
-Requirements:
+# Requirements:
 
 ROS (melodic)
 
@@ -9,7 +9,10 @@ Rviz
 
 Gazebo
 
-AR ALVAR pkg from ros website
+ar_track_alvar pkg
+```bash 
+sudo apt-get install ros-melodic-ar-track-alvar
+```
 
 # How To Run:
 
