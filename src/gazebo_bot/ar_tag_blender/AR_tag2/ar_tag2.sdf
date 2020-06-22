@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='ar_tag2'>
+    <static>true</static>
+    <link name="tag2_link">
+      <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>file://$(find gazebo_bot)/ar_tag_blender/AR_tag2/ar_tag2.dae</uri>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>file://$(find gazebo_bot)/ar_tag_blender/AR_tag2/ar_tag2.dae</uri>
+                </mesh>
+            </geometry>
+        </collision>
+    </link>
+  </model>
+</sdf>

@@ -12,18 +12,5 @@
 <include file="$(find gazebo_bot)/launch/ar.launch"/>
 
 <include file="$(find gazebo_bot)/launch/ar_track.launch"/>
-<!--
  
-  <param name="robot_description" command="$(find xacro)/xacro.py '/home/blebot/ar_tag/src/gazebo_bot/urdf/bot.xacro'"/>
-
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen"
-   args="-param robot_description -urdf -model bot" />
-
-
-<param name="robot_description" command="$(find xacro)/xacro.py '/home/blebot/ar_tag/src/gazebo_bot/urdf/artag.xacro'"/>
-
-  <node name="spawn_urdf_1" pkg="gazebo_ros" type="spawn_model" output="screen"
-   args="-param robot_description -urdf -model artag" />
--->
-
 </launch>
