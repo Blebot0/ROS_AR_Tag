@@ -21,6 +21,8 @@ Clone Repository and run following commands:
 ```bash
 git clone https://github.com/Blebot0/ROS_AR_Tag.git
 
+catkin_make
+
 source devel/setup.bash
 
 roslaunch gazebo_bot world.launch
