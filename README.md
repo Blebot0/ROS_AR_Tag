@@ -23,13 +23,16 @@ source devel/setup.bash
 roslaunch gazebo_bot world.launch
 ```
 
-# POSE OF AR TAG
+# Pose Of AR TAG
 
 Run ar_pose.py
 
 PATH: ar_tag/src/gazebo_bot/scripts
 
 ```bash 
+
+cd ~/ar_tag/src/gazebo_bot/scripts
+
 chmod +x ar_pose.py
 
 python3 ar_pose.py
