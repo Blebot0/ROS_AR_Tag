@@ -2,7 +2,7 @@
 
 <robot name="bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="/home/blebot/ar_tag/src/gazebo_bot/urdf/bot.gazebo" />
+<xacro:include filename="/$(find gazebo_bot)/urdf/bot.gazebo" />
 	
 <!-- CHASSIS -->
 
