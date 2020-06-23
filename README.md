@@ -24,7 +24,22 @@ git clone https://github.com/Blebot0/ROS_AR_Tag.git
 catkin_make
 
 source devel/setup.bash
+```
+# Saving AR_tags in ~/.gazebo/models folder
 
+```bash
+cd ~/ar_tag/src/gazebo_bot/ar_tag_blender
+```
+
+Copy Both AR_tag1 and AR_tag2 and save them in 
+
+```bash
+cd ~/.gazebo/models
+```
+
+and continue:
+
+```bash
 roslaunch gazebo_bot world.launch
 ```
 
