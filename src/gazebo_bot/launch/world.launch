@@ -9,8 +9,6 @@
 
 <include file="$(find gazebo_bot)/launch/bot.launch"/>
 
-<include file="$(find gazebo_bot)/launch/ar.launch"/>
-
 <include file="$(find gazebo_bot)/launch/ar_track.launch"/>
  
 </launch>

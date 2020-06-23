@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.83.0 commit date:2020-06-03, commit time:14:38, hash:211b6c29f771</authoring_tool>
     </contributor>
-    <created>2020-06-23T00:47:05</created>
-    <modified>2020-06-23T00:47:05</modified>
+    <created>2020-06-23T01:57:34</created>
+    <modified>2020-06-23T01:57:34</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -76,15 +76,25 @@
     </light>
   </library_lights>
   <library_effects>
-    <effect id="Material_001-effect">
+    <effect id="Material_002-effect">
       <profile_COMMON>
+        <newparam sid="MarkerData_2_png_001-surface">
+          <surface type="2D">
+            <init_from>MarkerData_2_png_001</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="MarkerData_2_png_001-sampler">
+          <sampler2D>
+            <source>MarkerData_2_png_001-surface</source>
+          </sampler2D>
+        </newparam>
         <technique sid="common">
           <lambert>
             <emission>
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <color sid="diffuse">0.8 0.8 0.8 1</color>
+              <texture texture="MarkerData_2_png_001-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -94,10 +104,14 @@
       </profile_COMMON>
     </effect>
   </library_effects>
-  <library_images/>
+  <library_images>
+    <image id="MarkerData_2_png_001" name="MarkerData_2_png_001">
+      <init_from>MarkerData_2.png.001.png</init_from>
+    </image>
+  </library_images>
   <library_materials>
-    <material id="Material_001-material" name="Material.001">
-      <instance_effect url="#Material_001-effect"/>
+    <material id="Material_002-material" name="Material.002">
+      <instance_effect url="#Material_002-effect"/>
     </material>
   </library_materials>
   <library_geometries>
@@ -124,7 +138,7 @@
           </technique_common>
         </source>
         <source id="Cube-mesh-map-0">
-          <float_array id="Cube-mesh-map-0-array" count="72">0.3333333 1 0 0.6666668 0.3333333 0.6666667 0.3333334 0 0.6666668 0.3333333 0.3333334 0.3333333 0.3333334 0.6666666 0.6666667 0.3333333 0.6666668 0.6666666 0.001502573 9.80938e-4 0.9944415 1.003075 0.9981471 -8.71887e-4 1.29143e-7 0.3333333 0.3333333 0 0.3333334 0.3333333 0 0.6666667 0.3333333 0.3333333 0.3333333 0.6666666 0.3333333 1 0 1 0 0.6666668 0.3333334 0 0.6666667 0 0.6666668 0.3333333 0.3333334 0.6666666 0.3333334 0.3333334 0.6666667 0.3333333 0.001502573 9.80938e-4 -3.50207e-4 0.9975162 0.9944415 1.003075 1.29143e-7 0.3333333 0 0 0.3333333 0 0 0.6666667 0 0.3333334 0.3333333 0.3333333</float_array>
+          <float_array id="Cube-mesh-map-0-array" count="72">0.3333333 1 0 0.6666668 0.3333333 0.6666667 0.3333334 0 0.6666668 0.3333333 0.3333334 0.3333333 0.3333334 0.6666666 0.6666667 0.3333333 0.6666668 0.6666666 0 1.000984 1.000984 0 1.000984 1.000984 1.29143e-7 0.3333333 0.3333333 0 0.3333334 0.3333333 0 0.6666667 0.3333333 0.3333333 0.3333333 0.6666666 0.3333333 1 0 1 0 0.6666668 0.3333334 0 0.6666667 0 0.6666668 0.3333333 0.3333334 0.6666666 0.3333334 0.3333334 0.6666667 0.3333333 0 1.000984 0 0 1.000984 0 1.29143e-7 0.3333333 0 0 0.3333333 0 0 0.6666667 0 0.3333334 0.3333333 0.3333333</float_array>
           <technique_common>
             <accessor source="#Cube-mesh-map-0-array" count="36" stride="2">
               <param name="S" type="float"/>
@@ -146,7 +160,7 @@
         <vertices id="Cube-mesh-vertices">
           <input semantic="POSITION" source="#Cube-mesh-positions"/>
         </vertices>
-        <triangles material="Material_001-material" count="12">
+        <triangles material="Material_002-material" count="12">
           <input semantic="VERTEX" source="#Cube-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#Cube-mesh-map-0" offset="2" set="0"/>
@@ -171,7 +185,7 @@
         <instance_geometry url="#Cube-mesh" name="Cube">
           <bind_material>
             <technique_common>
-              <instance_material symbol="Material_001-material" target="#Material_001-material">
+              <instance_material symbol="Material_002-material" target="#Material_002-material">
                 <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
               </instance_material>
             </technique_common>
