@@ -36,7 +36,7 @@ and continue:
 roslaunch gazebo_bot world.launch
 ```
 
-# Pose Of AR TAG
+# Traversal towards AR TAG
 
 Run ar_pose.py
 
@@ -46,9 +46,9 @@ PATH: ar_tag/src/gazebo_bot/scripts
 
 cd ~/ar_tag/src/gazebo_bot/scripts
 
-chmod +x ar_pose.py
+chmod +x ar_pose_single.py
 
-python3 ar_pose.py
+python3 ar_pose_single.py
 ```
 
 Open New Terminal and Run:
