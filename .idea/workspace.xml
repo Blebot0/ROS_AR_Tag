@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8ea1d90-6057-4818-aa5c-ed0a54866ebb" name="Default Changelist" comment="ARTR">
-      <change afterPath="$PROJECT_DIR$/Misc/AR_tag.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Misc/MarkerData_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Misc/frames.gv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Misc/frames.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devel/RQT_graph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/AR_tag3/meshes/MarkerData_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/AR_tag3/meshes/ar_tag3.dae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/AR_tag3/model.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/AR_tag3/model.sdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/AR_tag4/meshes/MarkerData_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/AR_tag4/meshes/ar_tag4.dae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/AR_tag4/model.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/AR_tag4/model.sdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gazebo_bot/scripts/.ar_pose_single.py.swp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gazebo_bot/scripts/ar_pose_single.py" afterDir="false" />
+    <list default="true" id="c8ea1d90-6057-4818-aa5c-ed0a54866ebb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AR_tag.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RQT_graph.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frames.gv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frames.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gazebo_bot/launch/bot.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/gazebo_bot/launch/bot.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gazebo_bot/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gazebo_bot/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gazebo_bot/scripts/ar_pose.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gazebo_bot/scripts/ar_pose.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gazebo_bot/world/gazebo_bot.world" beforeDir="false" afterPath="$PROJECT_DIR$/src/gazebo_bot/world/gazebo_bot.world" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593022378166</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ARTR">
+      <created>1593267369934</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593267369934</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,10 +139,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="ARTR" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2" timestamp="1593266895676">
+    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2" timestamp="1593267369254">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1593266895676" />
+    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1593267369254" />
     <state x="167" y="125" width="727" height="855" key="DiffContextDialog" timestamp="1592818110143">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -171,10 +155,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="698" y="270" width="580" height="564" key="MultipleFileMergeDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1592818085677" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593022382383">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593267375874">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1593022382383" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1593267375874" />
     <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593022360932">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
