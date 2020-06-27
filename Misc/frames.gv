@@ -1,0 +1,15 @@
+digraph G {
+"camera_depth_optical_frame" -> "camera"[label="Broadcaster: /world_frames_connection\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 19.794 sec old)\nBuffer length: 0.000 sec\n"];
+"chassis" -> "left_fwheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 19.700 ( 0.094 sec old)\nBuffer length: 4.800 sec\n"];
+"chassis" -> "left_wheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 19.700 ( 0.094 sec old)\nBuffer length: 4.800 sec\n"];
+"chassis" -> "right_fwheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 19.700 ( 0.094 sec old)\nBuffer length: 4.800 sec\n"];
+"chassis" -> "right_wheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.208 Hz\nMost recent transform: 19.700 ( 0.094 sec old)\nBuffer length: 4.800 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 19.794"[ shape=plaintext ] ;
+ }->"chassis";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 19.794"[ shape=plaintext ] ;
+ }->"camera_depth_optical_frame";
+}
