@@ -44,36 +44,34 @@ while not rospy.is_shutdown():
             ## Tag IDS
             id1 = dat.markers[0].id
             id2 = dat.markers[1].id
-            
+
             ## POSITION OF TAGS
             pos_z1 = dat.markers[0].pose.pose.position.z*100
             pos_x1 = dat.markers[0].pose.pose.position.x*100
-            
+
             pos_x2 = dat.markers[1].pose.pose.position.x*100
             pos_z2 = dat.markers[1].pose.pose.position.z*100
-            
+
             ## DISTANCE BETWEEN TAG AND BOT
             dist1 = pow(pow(pos_x1, 2) + pow(pos_z1, 2), 0.5)
             dist2 = pow(pow(pos_x2, 2) + pow(pos_z2, 2), 0.5)
-            
+
             ## CONDITIONS --
 
             if dist2>dist1:
                 x = dist2-dist1
-                print("x: ", x)
-                if x > 10:
+                if x > 5:
                     speed.linear.x = -0.4
                     speed.angular.z = -pos_x2/500
                     pub.publish(speed)
-                else: 
+                else:
                     speed.linear.x = -0.4
                     speed.angular.z = 0
                     pub.publish(speed)
 
             if dist1> dist2:
                 y = dist1 - dist2
-                print("y: ", y)
-                if y > 10:
+                if y > 5:
                     speed.linear.x = -0.4
                     speed.angular.z = -pos_x1/500
                     pub.publish(speed)
@@ -86,39 +84,43 @@ while not rospy.is_shutdown():
         except NameError as e:
             print(e)
             pass
-    
+
     if j==1:
-        id_val = dat.markers[0].id
-        if id_val == id1:
-            print(1)
-            speed.linear.x = -0.4
-            speed.angular.z = -pos_x1/500 + 0.12
-            print(speed)
+        or_x = dat.markers[0].pose.pose.orientation.x
+        or_y = dat.markers[0].pose.pose.orientation.y
+        or_z = dat.markers[0].pose.pose.orientation.z
+        or_w = dat.markers[0].pose.pose.orientation.w
 
-        elif id_val == id2:
-            print(2)
+        quaternion = (or_x, or_y, or_z, or_w)
+        euler = euler_from_quaternion(quaternion)
+        pitch = math.degrees(euler[1])+180
+        print(pitch)     
+        if pitch<180:
+            speed.angular.z = pitch/360
             speed.linear.x = -0.4
-            speed.angular.z = -pos_x2/500 + 1.12
-            print(speed)
+            pub.publish(speed)
 
-        pub.publish(speed)
+        elif pitch>180:
+            speed.angular.z = -pitch/360
+            speed.linear.x = -0.4
+            pub.publish(speed)
 
 
     elif j==0 and flag == 1:
         if flag == 1:
-            speed.linear.x = -0.3
+            speed.linear.x = -0.4
             speed.angular.z = 0
             pub.publish(speed)
             print(speed)
             time.sleep(4)
-            flag =2
+            flag = 2
         if flag == 2:
             speed.linear.x = 0
             speed.angular.z = 0
             pub.publish(speed)
             print(speed)
 
-        
-        
+
+
     r.sleep()
-                                         
+
