@@ -21,15 +21,14 @@ def callback(msg):
         pos_y = msg.markers[0].pose.pose.position.y *100
         pos_z = msg.markers[0].pose.pose.position.z *100
         print("x = {0}cm, y = {1}cm, z = {2}cm".format(pos_x  , pos_y , pos_z  ))
+        
 
-
-
-rospy.init_node('ar_pose')
+rospy.init_node('ar_pose_single')
 
 rospy.Subscriber("/ar_pose_marker", AlvarMarkers, callback)
 pub = rospy.Publisher('cmd_vel', Twist, queue_size = 10)
 
-r = rospy.Rate(10)
+r = rospy.Rate(100)
 speed = Twist()
 
 

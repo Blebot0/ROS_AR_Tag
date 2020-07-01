@@ -19,7 +19,6 @@ def callback(msg):
         except IndexError:
             break
     
-
     for i in range(j):
         print("ID:       " + str(msg.markers[i].id))
         pos_x = msg.markers[i].pose.pose.position.x *100
