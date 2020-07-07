@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ea1d90-6057-4818-aa5c-ed0a54866ebb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/realsense_gazebo_plugin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +15,7 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1dXN83qXIvu9Hjo4XEEoY2gA3fj" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -158,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593631406689</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ARTR">
+      <created>1594135545854</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1594135545854</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,10 +175,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="ARTR" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2" timestamp="1593631406260">
+    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2" timestamp="1594135545018">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1593631406260" />
+    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1594135545018" />
     <state x="167" y="125" width="727" height="855" key="DiffContextDialog" timestamp="1592818110143">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -183,13 +191,13 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="698" y="270" width="580" height="564" key="MultipleFileMergeDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1592818085677" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593631413797">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1594135583020">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1593631413797" />
-    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593022360932">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1594135583020" />
+    <state x="761" y="472" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594135552928">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1593022360932" />
+    <state x="761" y="472" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1594135552928" />
   </component>
 </project>

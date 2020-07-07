@@ -8,7 +8,7 @@
   </include>
  
 <include file="$(find gazebo_bot)/launch/rover.launch"/>
-
-<include file="$(find gazebo_bot)/launch/ar_track.launch"/>
  
+<include file="$(find gazebo_bot)/launch/ar_track_camera_2.launch"/>
+<include file="$(find gazebo_bot)/launch/ar_track_camera_1.launch"/>
 </launch>

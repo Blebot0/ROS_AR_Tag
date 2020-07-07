@@ -1,0 +1,14 @@
+digraph G {
+"chassis" -> "left_fwheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.217 Hz\nMost recent transform: 16.500 ( 0.054 sec old)\nBuffer length: 4.600 sec\n"];
+"chassis" -> "left_wheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.217 Hz\nMost recent transform: 16.500 ( 0.054 sec old)\nBuffer length: 4.600 sec\n"];
+"chassis" -> "right_fwheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.217 Hz\nMost recent transform: 16.500 ( 0.054 sec old)\nBuffer length: 4.600 sec\n"];
+"chassis" -> "right_wheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.217 Hz\nMost recent transform: 16.500 ( 0.054 sec old)\nBuffer length: 4.600 sec\n"];
+"chassis" -> "camera_1"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 16.554 sec old)\nBuffer length: 0.000 sec\n"];
+"chassis" -> "camera_2"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 16.554 sec old)\nBuffer length: 0.000 sec\n"];
+"chassis" -> "camera_link_2"[label="Broadcaster: /camera_2/world_frames_connection\nAverage rate: 10.168 Hz\nMost recent transform: 16.611 ( -0.057 sec old)\nBuffer length: 4.524 sec\n"];
+"chassis" -> "camera_link_1"[label="Broadcaster: /camera_1/world_frames_connection\nAverage rate: 10.172 Hz\nMost recent transform: 16.611 ( -0.057 sec old)\nBuffer length: 4.522 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 16.554"[ shape=plaintext ] ;
+ }->"chassis";
+}

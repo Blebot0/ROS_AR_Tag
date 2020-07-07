@@ -197,12 +197,12 @@
 <!--JOINTS -->
 
 <joint name="camera_joint_1" type="fixed">
-        <origin xyz="0.45 0.125 0.3" rpy="0 0 0.86" />
+        <origin xyz="-0.45 0.125 0.3" rpy="0 0 3.1414" />
         <child link="camera_1" />
         <parent link="chassis" />
 </joint>
 <joint name="camera_joint_2" type="fixed">
-        <origin xyz="0.45 -0.125 0.3" rpy="0 0 -0.86" />
+        <origin xyz="-0.45 -0.125 0.3" rpy="0 0 3.1414" />
         <child link="camera_2" />
         <parent link="chassis" />
 </joint>
