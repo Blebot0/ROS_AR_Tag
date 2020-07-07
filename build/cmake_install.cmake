@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/blebot/ar_tag/build/gtest/cmake_install.cmake")
   include("/home/blebot/ar_tag/build/gazebo_bot/cmake_install.cmake")
+  include("/home/blebot/ar_tag/build/realsense_gazebo_plugin/cmake_install.cmake")
 
 endif()
 

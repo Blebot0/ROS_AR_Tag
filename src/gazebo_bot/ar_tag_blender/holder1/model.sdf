@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='holder1'>
+    <static>true</static>
+    <link name="holder1_link">
+
+        <visual name="visual_holder1">
+        <geometry>
+                <mesh>
+                    <uri>model://holder1/meshes/holder1.dae</uri>
+                </mesh>
+            </geometry>
+        </visual>
+         <collision name="collision_holder1">
+                <geometry>
+                <mesh>
+                    <uri>model://holder1/meshes/holder1.dae</uri>
+                </mesh>
+            </geometry>
+        </collision>
+
+    </link>
+  </model>
+</sdf>
+~                                        

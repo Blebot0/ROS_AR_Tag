@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='tag4_w_holder'>
+    <static>true</static>
+    <link name="tag4_w_holder_link">
+
+        <visual name="visual_tag4_w_holder">
+        <geometry>
+                <mesh>
+                    <uri>model://Tag2_w_holder/meshes/tag4_w_holder.dae</uri>
+                </mesh>
+            </geometry>
+        </visual>
+         <collision name="collision_tag4_w_holder">
+                <geometry>
+                <mesh>
+                    <uri>model://Tag2_w_holder/meshes/tag4_w_holder.dae</uri>
+                </mesh>
+            </geometry>
+        </collision>
+
+    </link>
+  </model>
+</sdf>
+~                                        
