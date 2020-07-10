@@ -197,19 +197,19 @@
 <!--JOINTS -->
 
 <joint name="camera_joint_1" type="fixed">
-        <origin xyz="-0.45 0.125 0.3" rpy="0 0 3.1414" />
+        <origin xyz="-0.45 0.125 0.3" rpy="0 0 2.35605" />
         <child link="camera_1" />
         <parent link="chassis" />
 </joint>
 <joint name="camera_joint_2" type="fixed">
-        <origin xyz="-0.45 -0.125 0.3" rpy="0 0 3.1414" />
+        <origin xyz="-0.45 -0.125 0.3" rpy="0 0 3.92675" />
         <child link="camera_2" />
         <parent link="chassis" />
 </joint>
 
 
   <joint type="continuous" name="left_wheel_hinge">
-    <origin xyz="0.35 0.565 0" rpy="0 0 0"/>
+    <origin xyz="0.25 0.565 0" rpy="0 0 0"/>
     <child link="left_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -218,7 +218,7 @@
   </joint>
 
   <joint type="continuous" name="right_wheel_hinge">
-    <origin xyz="0.35 -0.565 0" rpy="0 0 0"/>
+    <origin xyz="0.25 -0.565 0" rpy="0 0 0"/>
     <child link="right_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -229,7 +229,7 @@
 
 
  <joint type="continuous" name="left_wheel_fhinge">
-    <origin xyz="-0.35 0.565 0" rpy="0 0 0"/>
+    <origin xyz="-0.25 0.565 0" rpy="0 0 0"/>
     <child link="left_fwheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -238,7 +238,7 @@
   </joint>
 
   <joint type="continuous" name="right_wheel_fhinge">
-    <origin xyz="-0.35 -0.565 0" rpy="0 0 0"/>
+    <origin xyz="-0.25 -0.565 0" rpy="0 0 0"/>
     <child link="right_fwheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
