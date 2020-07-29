@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='tag4_prism'>
+    <static>true</static>
+    <link name="tag4_prism_link">
+
+        <visual name="visual_ar_tag4_prism">
+        <geometry>
+                <mesh>
+                    <uri>model://Tag4_prism/meshes/tag4_prism.dae</uri>
+                </mesh>
+            </geometry>
+        </visual>
+         <collision name="collision_ar_tag4_prism">
+                <geometry>
+                <mesh>
+                    <uri>model://Tag4_prism/meshes/tag4_prism.dae</uri>
+                </mesh>
+            </geometry>
+        </collision>
+
+    </link>
+  </model>
+</sdf>
+~                                        
