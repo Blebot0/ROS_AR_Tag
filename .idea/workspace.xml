@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c8ea1d90-6057-4818-aa5c-ed0a54866ebb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/Tag4_prism/meshes/MarkerData_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/Tag4_prism/meshes/tag4_prism.dae" beforeDir="false" afterPath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/Tag4_prism/meshes/tag4_prism.dae" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/Tag5_prism/meshes/tag5_prism.dae" beforeDir="false" afterPath="$PROJECT_DIR$/src/gazebo_bot/ar_tag_blender/Tag5_prism/meshes/tag5_prism.dae" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_bot/urdf/rover.gazebo" beforeDir="false" afterPath="$PROJECT_DIR$/src/gazebo_bot/urdf/rover.gazebo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gazebo_bot/urdf/rover.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/src/gazebo_bot/urdf/rover.xacro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594407426953</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="ARTR">
+      <created>1596066388207</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1596066388207</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -188,10 +200,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="ARTR" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2" timestamp="1594407426432">
+    <state x="584" y="214" width="800" height="677" key="#Illuminated_Cloud" timestamp="1596524644707">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1594407426432" />
+    <state x="584" y="214" width="800" height="677" key="#Illuminated_Cloud/67.27.1853.1053@67.27.1853.1053" timestamp="1596524644707" />
+    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2" timestamp="1596524645895">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="600" y="131" width="777" height="843" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1596524645895" />
     <state x="167" y="125" width="727" height="855" key="DiffContextDialog" timestamp="1592818110143">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -204,10 +220,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="698" y="270" width="580" height="564" key="MultipleFileMergeDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1592818085677" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596066379004">
+    <state x="67" y="187" key="SettingsEditor" timestamp="1596524582977">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1596066379004" />
+    <state x="67" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1596524582977" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1596066398440">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1596066398440" />
     <state x="761" y="472" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594135552928">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
