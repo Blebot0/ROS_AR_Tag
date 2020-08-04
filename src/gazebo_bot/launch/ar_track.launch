@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
-
+	<group ns = "camera_1">
     <arg name="marker_size"          default="20.0" />
-    <arg name="max_new_marker_error" default="0.15" />
-    <arg name="max_track_error"      default="0.15" />
+    <arg name="max_new_marker_error" default="0.2" />
+    <arg name="max_track_error"      default="0.2" />
 
-    <arg name="cam_image_topic"      default="camera/rgb/image_raw" />
-    <arg name="cam_info_topic"       default="camera/rgb/camera_info" />
-    <arg name="output_frame"         default="camera_depth_optical_frame" />
+    <arg name="cam_image_topic"      default="/camera/image_raw" />
+    <arg name="cam_info_topic"       default="/camera/camera_info" />
+    <arg name="output_frame"         default="/chassis" />
 
- <node pkg="tf" type="static_transform_publisher" name="world_frames_connection" args="0 0 0 0 0 1.707 /camera_depth_optical_frame /camera 100"/>
     
-<node name="ar_track_alvar" pkg="ar_track_alvar" type="individualMarkersNoKinect" respawn="true" output="screen">
+<node pkg="tf" type="static_transform_publisher" name="world_frames_connection" args="-0.45 0 0.3 3.1414 1.5707 0 /chassis /camera_link 100"/>
+
+<node name="ar_track_alvar_1" pkg="ar_track_alvar" type="individualMarkersNoKinect" respawn="true" output="screen">
 		<param name="marker_size"           type="double" value="$(arg marker_size)" />
 		<param name="max_new_marker_error"  type="double" value="$(arg max_new_marker_error)" />
 		<param name="max_track_error"       type="double" value="$(arg max_track_error)" />
@@ -20,4 +21,5 @@
 		<remap from="camera_image"  to="$(arg cam_image_topic)" />
 		<remap from="camera_info"   to="$(arg cam_info_topic)" />
 	</node>
+</group>
 </launch>
