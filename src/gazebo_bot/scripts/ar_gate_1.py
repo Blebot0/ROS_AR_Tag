@@ -24,20 +24,16 @@ twist = Twist()
 
 def callback_pose(msg):
 	global right_ar_heading, left_ar_heading, ar_id, posx, posy, posz, left_distance, right_distance
-
-	ar_id = msg.id
-
+	
 	posx, posy, posz = msg.pose.position.x, msg.pose.position.y, msg.pose.position.z
 	slope=posx/posz
 
-	if (ar_id == 4 or ar_id == 6) or (ar_id == 8 or ar_id == 10):
+	if ar_id == 4:
 		right_ar_heading = degrees(asin(slope))
 		right_distance = hypot(posz,posx)
-		#print(ar_id, right_ar_heading, right_distance)
-	if (ar_id == 3 or ar_id == 5) or (ar_id == 7 or ar_id == 9):
+	if ar_id == 5:
 		left_ar_heading = degrees(asin(slope))
 		left_distance = hypot(posz,posx)
-		#print(ar_id, left_ar_heading, left_distance)
 
 def imu(pose):
 	global yaw
@@ -47,8 +43,6 @@ def imu(pose):
 	yaw= degrees(euler[2])
 	yaw = abs(yaw-360)
 	yaw = yaw%360
-	
-	#print(yaw)
 
 def stop():
 	twist.linear.y = 0
@@ -70,7 +64,6 @@ def align(angle):
         		if final_yaw>360:
 				final_yaw=final_yaw%360
 			flag=1
-			#print(yaw, final_yaw, angle)
 		angle_diff = yaw-final_yaw
 		if angle_diff<1 and angle_diff>-1: 
 				stop()
@@ -91,6 +84,18 @@ def move(move_dist):
 		pub.publish(twist)
 	stop()
 
+def gate(sign, dist, angle_diff, large, small, large_ar_heading, small_ar_heading):
+	angle=asin(small*sin(radians(angle_diff))/dist)
+	move_dist=large-dist/(2*cos(angle))
+	final_angle=90-degrees(angle)+7
+	through_gate_dist=tan(angle)*dist/2
+				
+	align(large_ar_heading)
+	move(move_dist)
+	align(sign*final_angle)
+	move(through_gate_dist+4)
+	exit()
+
 
 def listener():
 	rospy.init_node('bot_yaw', anonymous=True,disable_signals= True)
@@ -104,43 +109,18 @@ def listener():
 		angle_diff=right_ar_heading-left_ar_heading
 		dist=sqrt(pow(right_distance,2)+pow(left_distance,2)-2*right_distance*left_distance*cos(radians(angle_diff)))
 
-		print(right_ar_heading, left_ar_heading, right_distance, left_distance, dist)
-
 		if dist>0 and right_distance>0 and left_distance>0 and right_ar_heading>1 and left_ar_heading<-1:
-
 			if abs(right_ar_heading+left_ar_heading)<5:
-				print(right_distance)
 				move(right_distance+3)
 				exit()
 				
 			if right_distance>left_distance+0.2:
-
-				angle=asin(left_distance*sin(radians(angle_diff))/dist)
-				move_dist=right_distance-dist/(2*cos(angle))
-				final_angle=90-degrees(angle)+3
-				through_gate_dist=tan(angle)*dist/2
-				
-				align(right_ar_heading)
-				move(move_dist)
-				align(-final_angle)
-				move(through_gate_dist+4)
-				exit()
+				gate(-1, dist, angle_diff, right_distance, left_distance, right_ar_heading, left_ar_heading)
 
 			elif left_distance>right_distance+0.2:
-
-				angle=asin(right_distance*sin(radians(angle_diff))/dist)
-				move_dist=left_distance-dist/(2*cos(angle))
-				final_angle=90-degrees(angle)+3
-				through_gate_dist=tan(angle)*dist/2
-				
-				align(left_ar_heading)
-				move(move_dist)
-				align(final_angle)
-				move(through_gate_dist+4)
-				exit()
+				gate(1, dist, angle_diff, left_distance, right_distance, left_ar_heading, right_ar_heading)
 			
 			else:
-				print(right_distance)
 				move(right_distance+3)
 				exit()
 
