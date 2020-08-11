@@ -40,9 +40,11 @@ def imu(pose):
 	quaternion = (pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w)
 
 	euler = euler_from_quaternion(quaternion)
-	yaw= degrees(euler[2])
+	yaw= degrees(euler[2])+180
 	yaw = abs(yaw-360)
 	yaw = yaw%360
+
+	#print(yaw)
 
 def stop():
 	twist.linear.y = 0
@@ -77,7 +79,7 @@ def align(angle):
 
 
 def move(move_dist):
-	move_dist=move_dist*2.45
+	move_dist=move_dist*2.9
 	a=time.time()
 	while (time.time()-a)<=(move_dist/0.8):
 		twist.linear.x=0.8 
@@ -87,13 +89,14 @@ def move(move_dist):
 def gate(sign, dist, angle_diff, large, small, large_ar_heading, small_ar_heading, aligner):
 	angle=asin(small*sin(radians(angle_diff))/dist)
 	move_dist=large-dist/(2*cos(angle))
-	final_angle=90-degrees(angle)-aligner
+	final_angle=90-degrees(angle)
 	through_gate_dist=tan(angle)*dist/2
 				
 	align(large_ar_heading)
 	move(move_dist)
 	align(sign*final_angle)
-	move(through_gate_dist+4)
+	move(through_gate_dist+3)
+	stop()
 
 	exit()
 
@@ -116,7 +119,7 @@ def listener():
 				exit()
 				
 			if right_distance>left_distance+0.2:
-				gate(-1, dist, angle_diff, right_distance, left_distance, right_ar_heading, left_ar_heading, 5)
+				gate(-1, dist, angle_diff, right_distance, left_distance, right_ar_heading, left_ar_heading, 7)
 
 			elif left_distance>right_distance+0.2:
 				gate(1, dist, angle_diff, left_distance, right_distance, left_ar_heading, right_ar_heading, 19)
