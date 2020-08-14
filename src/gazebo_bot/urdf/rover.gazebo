@@ -8,8 +8,8 @@
     <rightFrontJoint>right_wheel_fhinge</rightFrontJoint>
     <leftRearJoint>left_wheel_hinge</leftRearJoint>
     <rightRearJoint>right_wheel_hinge</rightRearJoint>
-    <wheelSeparation>0.4</wheelSeparation>
-    <wheelDiameter>0.2</wheelDiameter>
+    <wheelSeparation>0.5</wheelSeparation>
+    <wheelDiameter>0.4</wheelDiameter>
     <commandTopic>cmd_vel</commandTopic>
     <robotBaseFrame>chassis</robotBaseFrame>
     <torque>20</torque>
@@ -93,7 +93,7 @@
 -->
 
 <!-- camera -->
-  <gazebo reference="camera">
+  <!--gazebo reference="camera">
     <sensor type="camera" name="camera">
       <update_rate>30.0</update_rate>
       <camera name="camera">
@@ -109,9 +109,9 @@
         </clip>
         <noise>
           <type>gaussian</type>
-          <!-- Noise is sampled independently per pixel on each frame.
+          < Noise is sampled independently per pixel on each frame.
                That pixel's noise value is added to each of its color
-               channels, which at that point lie in the range [0,1]. -->
+               channels, which at that point lie in the range [0,1]. >
           <mean>0.0</mean>
           <stddev>0.007</stddev>
         </noise>
@@ -131,7 +131,7 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
-  </gazebo>
+  </gazebo-->
 
 <gazebo reference="hokuyo">
     <sensor type="ray" name="head_hokuyo_sensor">
@@ -171,7 +171,7 @@
       <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
 <visualize>true</visualize>
 	<topicName>/scan</topicName>
-        <frameName>camera</frameName>
+        <frameName>hokuyo</frameName>
       </plugin>
     </sensor>
   </gazebo>
