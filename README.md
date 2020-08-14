@@ -62,6 +62,16 @@ Open New Terminal and Run:
 rviz
 ```
 
+# Realsense 
+```bash 
+cd catkin_ws/src
+
+sudo apt-get remove ros-melodic-realsense-*
+
+git clone https://github.com/pal-robotics/realsense_gazebo_plugin.git
+
+git clone https://github.com/pal-robotics-forks/realsense.git
+```
 
 
 
