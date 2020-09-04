@@ -98,7 +98,7 @@ def failsafe(init_dist, init_angle):
 	align(-1*init_angle)
 	stop()
 
-def tag_move(dist, move_dist):
+def tag_move(dist, move_dist, large_ar_heading):
 	time.sleep(0.1)
 	initial_tag=tag
 	while tag > (dist-move_dist):
