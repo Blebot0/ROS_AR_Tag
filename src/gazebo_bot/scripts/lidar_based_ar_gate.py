@@ -40,7 +40,7 @@ def laser(msg):
 	global tag
 	ranges = msg.ranges
 	ranges = [30 if x== float('inf') else x for x in ranges]
-	centre = ranges[200:400]
+	centre = ranges[33:37]
 	tag = min(centre)
 
 def imu(pose):
